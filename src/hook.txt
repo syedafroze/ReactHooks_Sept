@@ -1,0 +1,23 @@
+
+
+
+React_hooks
+
+hooks are the methods that will allow us to state and few of the lifecycle methos of class component  in
+a function component
+
+
+state  - useState(firstparameter)
+setState -useState(, second parameter)
+ComponentDidMount - useEffect(()=>{},[])
+ComponentDidUpdate -  useEffect(()=>{},[dependecies])
+ComponentWillUnmount - useEffect(()=>{ return ()=>{console.log("Unmounted")}},[])
+Refs - useRef();
+Memo - useMemo(()=>{},[dependencies])
+Callback  - useCallback(()=>{},[dependencies])
+Context - useContext(ContextApi)
+useReducer - useReducer()
+
+
+
+

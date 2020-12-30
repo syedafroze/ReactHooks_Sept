@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import State from "./React_Hooks/State";
+import LifeCycle from "./React_Hooks/LifeCycle";
+import Ref from "./React_Hooks/Ref";
+import Memo from "./React_Hooks/Memo";
+import ContextApi from "./contextApi";
+import ContextComp from "./React_Hooks/ContextComp";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ContextApi.Provider value="Syeds">
+        {/* <State></State> */}
+        {/* <LifeCycle></LifeCycle> */}
+        {/* <Ref></Ref> */}
+        <Memo></Memo>
+        <ContextComp></ContextComp>
+      </ContextApi.Provider>
     </div>
   );
 }
