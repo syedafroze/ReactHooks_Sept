@@ -5,9 +5,9 @@ function LifeCycle() {
   const [age, setAge] = useState(21);
 
   useEffect(() => {
-    console.log("Mounted"); //new Api call
-    return ()=>console.log("Unmounted");
-  }, [count]);
+    console.log("Mounted");
+    return () => console.log("Unmounted");
+  }, [count]); //here the second parameter can pass empty array when u want to use useEffect as ComponentDidMount
 
   return (
     <div>
